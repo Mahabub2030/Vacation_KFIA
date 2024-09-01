@@ -202,15 +202,18 @@ tbody tr.hide td img {
 .status.delivered {
     background-color: #86e49d;
     color: #006b21;
+    padding: 10px;
 }
 
 .status.cancelled {
     background-color: #d893a3;
     color: #b30021;
+    padding: 10px;
 }
 
 .status.pending {
     background-color: #ebc474;
+    padding: 10px;
 }
 
 .status.shipped {
