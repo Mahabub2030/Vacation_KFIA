@@ -1,764 +1,786 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Vacation For Damma Airprot Projicet</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <!-- import Marquee from "react-fast-marquee"; -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Vacation For Damma Airprot Projicet</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  <body class="text-black">
-    <main class="table" id="customers_table">
-      <section class="table__header sticky top-0 backdrop-blur-lg">
-        <h1>Vacation__4012</h1>
-        <br />
-        <!-- <h1 class="text-red-600">Jan-2025: Total : 7 Employe (Jan-2025 close XX)</h1> -->
-        <br />
-        <h1>Feb-2025 :Total :6 Employee</h1>
-        <br />
-        <h1>Mar-2025 :Total : 2 Employe</h1>
-        <h1 class="text-red-800 font-bold">Emargency -Total : 4 Employe</h1>
-        <div class="input-group">
-          <input type="search" placeholder="Search Data..." />
-          <img src="images/search.png" alt="" />
-        </div>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-        <div class="export__file">
-          <label
-            for="export-file"
-            class="export__file-btn"
-            title="Export File"
-          ></label>
-          <input type="checkbox" id="export-file" />
-          <div class="export__file-options">
-            <label>Export As & nbsp; &#10140;</label>
-            <label for="export-file" id="toPDF"
-              >PDF <img src="images/pdf.png" alt=""
-            /></label>
-            <label for="export-file" id="toJSON"
-              >JSON <img src="images/json.png" alt=""
-            /></label>
-            <label for="export-file" id="toCSV"
-              >CSV <img src="images/csv.png" alt=""
-            /></label>
-            <label for="export-file" id="toEXCEL"
-              >EXCEL <img src="images/excel.png" alt=""
-            /></label>
+<body class="text-black font-mono">
+  <main class="table" id="customers_table">
+
+    <div class="bg-[#A79770]  st top-0 left-0 right-0 z-50 text-white">
+      <Marquee pauseOnHover="true">
+        <div class=" p-4 font-mono text-xl border-red-500 shadow-gray-500-300 sticky top-0 flex gap-5">
+          <button className="btn gap-10">
+            Jan-2025
+            <div className="badge">+7</div>
+          </button>
+          <button className="btn gap-10">
+            Feb-2025
+            <div className="badge badge-secondary">6</div>
+          </button>
+          <button className="btn gap-10">
+           Mar-2025
+            <div className="badge badge-secondary"> 00+</div>
+          </button>
+          <button className="btn gap-10">
+            April-2025
+            <div className="badge badge-secondary">7</div>
+          </button>
+          <div class=" text-white bg-red-700 rounded-xl p-2">
+            <button className="btn gap-10 ">
+              Emargency
+              <div className="badge badge-secondary">1</div>
+            </button>
           </div>
         </div>
-      </section>
+      </Marquee>
+    </div>
+    <section class="table__header sticky top-0 backdrop-blur-lg">
+      <h1>Vacation__4012</h1>
+      <br />
+      <!-- <h1 class="text-red-600">Jan-2025: Total : 7 Employe (Jan-2025 close XX)</h1> -->
+      <br />
 
-      <section class="table__body">
-        <table>
-          <thead class="text-black">
-            <tr>
-              <th>S.N <span class="icon-arrow">&UpArrow;</span></th>
-              <th>Name <span class="icon-arrow">&UpArrow;</span></th>
-              <th>Applye-Date<span class="icon-arrow">&UpArrow;</span></th>
-              <th>Leave-Date <span class="icon-arrow">&UpArrow;</span></th>
-              <th>Retren-Date <span class="icon-arrow">&UpArrow;</span></th>
-              <th>SAP-Id<span class="icon-arrow">&UpArrow;</span></th>
-              <th>Wrok_Location <span class="icon-arrow">&UpArrow;</span></th>
-              <th>Vacation_Type <span class="icon-arrow">&UpArrow;</span></th>
-              <th>Total_Days<span class="icon-arrow">&UpArrow;</span></th>
-              <th>Condition<span class="icon-arrow">&UpArrow;</span></th>
-              <th>Nationality<span class="icon-arrow">&UpArrow;</span></th>
-              <th>Airprot <span class="icon-arrow">&UpArrow;</span></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>AMIR HOSSAIN</td>
-              <td><strong>06-Jun-24 </strong></td>
-              <td><strong>01-Sep-2024</strong></td>
-              <td><strong>10-Oct-2024 </strong></td>
-              <td><strong>407703</strong></td>
-              <td>AIRPORT N/S</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>55 Days</td>
-              <td>
-                <p class="status bg-success p-2">On_The_Job</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td class="text-gray-500 text-xl">Joing 27-OCT-2024</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>HARUN MOHAMMAD</td>
-              <td><strong>06-Jun-24 </strong></td>
-              <td><strong>01-Sep-2024</strong></td>
-              <td><strong>10-Oct-2024 </strong></td>
-              <td><strong>407434</strong></td>
-              <td>Parkingarage</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>55 Days</td>
-              <td>
-                <p class="status bg-success p-2">On_The_Job</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td class="text-gray-500 text-xl">Joing 27-OCT-2024</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Ashraf Ahmed Abdulhadi</td>
-              <td><strong>26-Jun-24 </strong></td>
-              <td><strong>01-Sep-2024</strong></td>
-              <td><strong>31-Sep-2024 </strong></td>
-              <td><strong>405721</strong></td>
-              <td>Managment</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>30 Days</td>
-              <td>
-                <p class="status bg-success p-3">On-the-Job</p>
-              </td>
-              <td>EGYPT</td>
-              <td class="text-lg text-gray-500 font-bold">
-                Joning Data : 02-Oct-2024
-              </td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Shafiqul Islam</td>
-              <td><strong>26-Jun-24 </strong></td>
-              <td><strong>03-Oct-2024</strong></td>
-              <td><strong>26-Dec-2024 </strong></td>
-              <td><strong>405442</strong></td>
-              <td>Royel_Terminal</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>84 Days</td>
-              <td>
-                <p class="status bg-success p-2">On_The_Job</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td class="text-gray-500 text-xl">Joing 27-OCT-2024</td>
-            </tr>
+      <h1>Jan-2025 :Total :7 Employee <br/> <span class="text-sm font-mono text-red-900 text-center">Normal</span></h1>
+      <br />
+      <h1>Feb-2025 :Total :6 Employee</h1>
+      <br />
+      <h1>Mar-2025 :Total : 0 Employe</h1>
+      <br />
+      <h1>April-2025 :Total : 5 Employe</h1>
+      <h1 class="text-red-800 font-bold">Emargency -Total : 1 Employe</h1>
+      <div class="input-group">
+        <input type="search" placeholder="Search Data..." />
+        <img src="images/search.png" alt="" />
+      </div>
 
-            <tr>
-              <td>6</td>
-              <td>Shams Ul Arifeen</td>
-              <td><strong>01-Sep-24 </strong></td>
-              <td><strong>08-Sep-2024</strong></td>
-              <td><strong>8-Oct-2024 </strong></td>
-              <td><strong>407813</strong></td>
-              <td>PARKING GARAGE</td>
-              <td>
-                <p class="status cancelled">Emergency</p>
-              </td>
-              <td>30 Days</td>
-              <td>
-                <p class="status bg-success p-2">On_The_Job</p>
-              </td>
-              <td>Pakistani</td>
-              <td class="text-xl text-gray-400 font bold">
-                Joining Date : 01-Oct-2024
-              </td>
-            </tr>
+      <div class="export__file">
+        <label for="export-file" class="export__file-btn" title="Export File"></label>
+        <input type="checkbox" id="export-file" />
+        <div class="export__file-options">
+          <label>Export As & nbsp; &#10140;</label>
+          <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt="" /></label>
+          <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt="" /></label>
+          <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt="" /></label>
+          <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt="" /></label>
+        </div>
+      </div>
+    </section>
 
-            <tr>
-              <td>7</td>
-              <td>Abdullah <span class="new"></span></td>
-              <td><strong>01-Sep-24 </strong></td>
-              <td><strong>08-Sep-2024</strong></td>
-              <td><strong>8-Oct-2024 </strong></td>
-              <td><strong>410335</strong></td>
-              <td>Roads&Graound</td>
-              <td>
-                <p class="status bg-success p-2">On_The_Job</p>
-              </td>
-              <td>30 Days</td>
-              <td>
-                <p class="status text-xl text-gray-500"> Joing </p>
-              </td>
-              <td>Pakistani</td>
-              <td class="text-gray-500 text-xl">Joing 27-OCT-2024</td>
-            </tr>
+    <section class="table__body">
+      <table>
+        <thead class="text-black">
+          <tr>
+            <th>S.N <span class="icon-arrow">&UpArrow;</span></th>
+            <th>Name <span class="icon-arrow">&UpArrow;</span></th>
+            <th>Applye-Date<span class="icon-arrow">&UpArrow;</span></th>
+            <th>Leave-Date <span class="icon-arrow">&UpArrow;</span></th>
+            <th>Retren-Date <span class="icon-arrow">&UpArrow;</span></th>
+            <th>SAP-Id<span class="icon-arrow">&UpArrow;</span></th>
+            <th>Wrok_Location <span class="icon-arrow">&UpArrow;</span></th>
+            <th>Vacation_Type <span class="icon-arrow">&UpArrow;</span></th>
+            <th>Total_Days<span class="icon-arrow">&UpArrow;</span></th>
+            <th>Condition<span class="icon-arrow">&UpArrow;</span></th>
+            <th>Nationality<span class="icon-arrow">&UpArrow;</span></th>
+            <th>Airprot <span class="icon-arrow">&UpArrow;</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="font-mono">
+            <td>1</td>
+            <td>AMIR HOSSAIN</td>
+            <td><strong>06-Jun-24 </strong></td>
+            <td><strong>01-Sep-2024</strong></td>
+            <td><strong>10-Oct-2024 </strong></td>
+            <td><strong>407703</strong></td>
+            <td>AIRPORT N/S</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>55 Days</td>
+            <td>
+              <p class="status bg-success p-2">On_The_Job</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td class="text-gray-500 text-xl font-mono">Joing 27-OCT-2024</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>HARUN MOHAMMAD</td>
+            <td><strong>06-Jun-24 </strong></td>
+            <td><strong>01-Sep-2024</strong></td>
+            <td><strong>10-Oct-2024 </strong></td>
+            <td><strong>407434</strong></td>
+            <td>Parkingarage</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>55 Days</td>
+            <td>
+              <p class="status bg-success p-2">On_The_Job</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td class="text-gray-500 text-xl font-mono">Joing 27-OCT-2024</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Ashraf Ahmed Abdulhadi</td>
+            <td><strong>26-Jun-24 </strong></td>
+            <td><strong>01-Sep-2024</strong></td>
+            <td><strong>31-Sep-2024 </strong></td>
+            <td><strong>405721</strong></td>
+            <td>Managment</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>30 Days</td>
+            <td>
+              <p class="status bg-success p-3">On-the-Job</p>
+            </td>
+            <td>EGYPT</td>
+            <td class="text-gray-500 text-xl font-mono">
+              Joning Data : 02-Oct-2024
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Shafiqul Islam</td>
+            <td><strong>26-Jun-24 </strong></td>
+            <td><strong>03-Oct-2024</strong></td>
+            <td><strong>26-Dec-2024 </strong></td>
+            <td><strong>405442</strong></td>
+            <td>Royel_Terminal</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>84 Days</td>
+            <td>
+              <p class="status bg-success p-2">On_The_Job</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td class="text-gray-500 text-xl font-mono">Joing 27-OCT-2024</td>
+          </tr>
 
-            <tr>
-              <td>8</td>
-              <td>MD Suman</td>
-              <td><strong>12-Jun-24 </strong></td>
-              <td><strong>02-Oct-2024</strong></td>
-              <td><strong>25-Nov-2024 </strong></td>
-              <td><strong>407612</strong></td>
-              <td>Parkingarage</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>54 Days</td>
-              <td>
-                <p class="status delivered">On_Vacation</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
+          <tr>
+            <td>6</td>
+            <td>Shams Ul Arifeen</td>
+            <td><strong>01-Sep-24 </strong></td>
+            <td><strong>08-Sep-2024</strong></td>
+            <td><strong>8-Oct-2024 </strong></td>
+            <td><strong>407813</strong></td>
+            <td>PARKING GARAGE</td>
+            <td>
+              <p class="status cancelled">Emergency</p>
+            </td>
+            <td>30 Days</td>
+            <td>
+              <p class="status bg-success p-2">On_The_Job</p>
+            </td>
+            <td>Pakistani</td>
+            <td class="text-gray-500 text-xl font-mono">
+              Joining Date : 01-Oct-2024
+            </td>
+          </tr>
 
-            <tr>
-              <td>9</td>
-              <td><h1>--------------------</h1></td>
-              <!-- Shoeib Abou Zeid Mahmoud Awad <span class="new">New !</span> -->
-              <!-- Shoeib Abou Zeid Mahmoud Awad <span class="new">New !</span> -->
+          <tr>
+            <td>7</td>
+            <td>Abdullah <span class="new"></span></td>
+            <td><strong>01-Sep-24 </strong></td>
+            <td><strong>08-Sep-2024</strong></td>
+            <td><strong>8-Oct-2024 </strong></td>
+            <td><strong>410335</strong></td>
+            <td>Roads&Graound</td>
+            <td>
+              <p class="status bg-success p-2">On_The_Job</p>
+            </td>
+            <td>30 Days</td>
+            <td>
+              <p class="status text-xl text-gray-500"> Joing </p>
+            </td>
+            <td>Pakistani</td>
+            <td class="text-gray-500 text-xl font-mono">Joing 27-OCT-2024</td>
+          </tr>
 
-              <td><strong>12-Jun-24 </strong></td>
-              <td><strong>01-Oct-2024</strong></td>
-              <td><strong>29-Nov-2024 </strong></td>
-              <td><strong>401798</strong></td>
-              <td>Managment</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>60 Days</td>
-              <td>
-                <p class="status cancelled">cancelled</p>
-              </td>
-              <td>EGYPT</td>
-              <td>Shoag_IA_EGYPT</td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td>
-                Gobindo Fokir Chan
-              </td>
-              <td><strong>21-July-24 </strong></td>
-              <td><strong>01-Nov-2024</strong></td>
-              <td><strong>26-Dec-2024-Dec-2024 </strong></td>
-              <td><strong>407510</strong></td>
-              <td>Nursery</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>56 Days</td>
-              <td>
-                <p class="status pending">On_Vacation</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>11</td>
-              <td>
-                Rahim Sikder
+          <tr>
+            <td>8</td>
+            <td>MD Suman</td>
+            <td><strong>12-Jun-24 </strong></td>
+            <td><strong>02-Oct-2024</strong></td>
+            <td><strong>25-Nov-2024 </strong></td>
+            <td><strong>407612</strong></td>
+            <td>Parkingarage</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>54 Days</td>
+            <td>
+              <p class="status delivered">On_Vacation</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td class="text-gray-500 text-xl font-mono">Joining Date:26-Nov-2024</td>
+          </tr>
 
-              </td>
-              <td><strong>08-July-24 </strong></td>
-              <td><strong>01-Nov-2024</strong></td>
-              <td><strong>26-Dec-2024 </strong></td>
-              <td><strong>407613</strong></td>
-              <td>Campe & Security</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>56 Days</td>
-              <td>
-                <p class="status pending">On-Vacation</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
+          <tr>
+            <td>9</td>
+            <td>
+              <h1>--------------------</h1>
+            </td>
+            <!-- Shoeib Abou Zeid Mahmoud Awad <span class="new">New !</span> -->
+            <!-- Shoeib Abou Zeid Mahmoud Awad <span class="new">New !</span> -->
 
-            <tr>
-              <td>12</td>
-              <td>
-                ZAKEER HUSSAIN FATEH MOHD
-                
-              </td>
-              <td><strong>08-July-24 </strong></td>
-              <td><strong>03-Nov-2024</strong></td>
-              <td><strong>26-Jan-2025 </strong></td>
-              <td><strong>405639</strong></td>
-              <td>Irrigation</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>84 Days</td>
-              <td>
-                <p class="status pending">On_Vacation</p>
-              </td>
-              <td>Indian</td>
-              <td>Dehli_Airprot</td>
-            </tr>
+            <td><strong>12-Jun-24 </strong></td>
+            <td><strong>01-Oct-2024</strong></td>
+            <td><strong>29-Nov-2024 </strong></td>
+            <td><strong>401798</strong></td>
+            <td>Managment</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>60 Days</td>
+            <td>
+              <p class="status cancelled">cancelled</p>
+            </td>
+            <td>EGYPT</td>
+            <td>Shoag_IA_EGYPT</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>
+              Gobindo Fokir Chan
+            </td>
+            <td><strong>21-July-24 </strong></td>
+            <td><strong>01-Nov-2024</strong></td>
+            <td><strong>26-Dec-2024-Dec-2024 </strong></td>
+            <td><strong>407510</strong></td>
+            <td>Nursery</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>56 Days</td>
+            <td>
+              <p class="status pending">On_Vacation</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>
+              Rahim Sikder
 
-            <tr>
-              <td>13</td>
-              <td>MOHAMMAD JAMAL</td>
-              <td><strong>31-July-2024</strong></td>
-              <td><strong>05-Aug-2024</strong></td>
-              <td><strong>05-Sep-2024 </strong></td>
-              <td><strong>407470</strong></td>
-              <td>FENCE,ROAD,DRAIN</td>
-              <td>
-                <p class="status cancelled">Emergency</p>
-              </td>
-              <td>30 Days</td>
-              <td>
-                <p class="status bg-success p-2">On_The_Job</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td class="text-lg font-bold text-gray-600">
-                Joining Date : 22-Sep-2024
-              </td>
-            </tr>
+            </td>
+            <td><strong>08-July-24 </strong></td>
+            <td><strong>01-Nov-2024</strong></td>
+            <td><strong>26-Dec-2024 </strong></td>
+            <td><strong>407613</strong></td>
+            <td>Campe & Security</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>56 Days</td>
+            <td>
+              <p class="status pending">On-Vacation</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
 
-            <tr>
-              <td>14</td>
-              <td>MD Fhozlul Hakue <span class="new">New !</span></td>
-              <td><strong>02-Sep-24 </strong></td>
-              <td><strong>01-Jan-2025</strong></td>
-              <td><strong>01-May-2025 </strong></td>
-              <td><strong>403449</strong></td>
-              <td>Waste Management</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>120Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>15</td>
-              <td>Mohammad Mithun <span class="new">New !</span></td>
-              <td><strong>02-Sep-24 </strong></td>
-              <td><strong>01-Jan-2025</strong></td>
-              <td><strong>01-Mar-2025 </strong></td>
-              <td><strong>408141</strong></td>
-              <td>PARKING GARAGE</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>60Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>16</td>
-              <td>MOHAMMAD ROCKY HOSSAIN <span class="new">New !</span></td>
-              <td><strong>02-Sep-24 </strong></td>
-              <td><strong>01-Jan-2025</strong></td>
-              <td><strong>01-Mar-2025 </strong></td>
-              <td><strong>405702</strong></td>
-              <td>Nursery</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>60Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>17</td>
-              <td>Main Uddin<span class="new">New !</span></td>
-              <td><strong>02-Sep-24 </strong></td>
-              <td><strong>01-Jan-2025</strong></td>
-              <td><strong>01-Mar-2025 </strong></td>
-              <td><strong>407572</strong></td>
-              <td>PARKING GARAGE</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>60Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>18</td>
-              <td>MOHAMMED MUSLIM <span class="new">New !</span></td>
-              <td><strong>04-Sep-24 </strong></td>
-              <td><strong>01-Jan-2025</strong></td>
-              <td><strong>01-Mar-2025 </strong></td>
-              <td><strong>401803</strong></td>
-              <td>Irrigation</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>60Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Indian</td>
-              <td>Dehlli_Internation_Airprot</td>
-            </tr>
-            <tr>
-              <td>19</td>
-              <td>MD DALOWAR<span class="new">New !</span></td>
-              <td><strong>02-Sep-24 </strong></td>
-              <td><strong>01-Jan-2025</strong></td>
-              <td><strong>01-Mar-2025 </strong></td>
-              <td><strong>407609</strong></td>
-              <td>Control Tower</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>60Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>20</td>
-              <td>Mohammad Abu Kaowsar<span class="new">New !</span></td>
-              <td><strong>09-Sep-24 </strong></td>
-              <td><strong>01-Jan-2025</strong></td>
-              <td><strong>01-Apr-2025 </strong></td>
-              <td><strong>408140</strong></td>
-              <td>Irrigation</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>90Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>21</td>
-              <td>ALI ABDUL HADI</td>
-              <td><strong>08-Sep-24 </strong></td>
-              <td><strong>01-Oct-2024</strong></td>
-              <td><strong>30-Oct-2024 </strong></td>
-              <td><strong>401737</strong></td>
-              <td>Royal Terminal</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>30Days</td>
-              <td>
-                <p class="status bg-blue-400">On_The_Job</p>
-              </td>
-              <td>Saudi</td>
-              <td> 31-oct-2024</td>
-            </tr>
-            <tr>
-              <td>22</td>
-              <td>A.Jabbar <span class="new"> New !</span></td>
-              <td><strong>29-Sep-2024 </strong></td>
-              <td><strong>01-Mar-2025</strong></td>
-              <td><strong>30-May-2024 </strong></td>
-              <td><strong>405395</strong></td>
-              <td>Roads & Graounds</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>60Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Indian</td>
-              <td>Dehli_Airprot</td>
-            </tr>
-            <tr>
-              <td>23</td>
-              <td>Hassan Ahmed Alzaharani</td>
-              <td><strong>16-Sep-24 </strong></td>
-              <td><strong>17-Sep-2024</strong></td>
-              <td><strong>20-Sep-2024 </strong></td>
-              <td><strong>407344</strong></td>
-              <td>Managment</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>3Days</td>
-              <td>
-                <p class="status bg-success p-2">On_The_Job</p>
-              </td>
-              <td>Saudi</td>
-              <td class="text-lg font-bold text-gray-600">
-                Joining Date : 21-Sep-2024
-              </td>
-            </tr>
-            <tr>
-              <td>24</td>
-              <td>SADIK SAIDUR MAHADI</td>
-              <td><strong>22-Sep-24 </strong></td>
-              <td><strong>24-Sep-2024</strong></td>
-              <td><strong>26-Sep-2024 </strong></td>
-              <td><strong>401730</strong></td>
-              <td>Inside_Terminal</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>3Days</td>
-              <td>
-                <p class="status bg-success p-2">On_The_Job</p>
-              </td>
-              <td>Saudi</td>
-              <td class="text-lg font-bold text-gray-600">
-                Joning 28-Sep-2024
-              </td>
-            </tr>
-            <tr>
-              <td>25</td>
-              <td>Mozah Farss Al Dossary</td>
-              <td><strong>24-Sep-24 </strong></td>
-              <td><strong>15-Oct-2024</strong></td>
-              <td><strong>14-Nov-2024 </strong></td>
-              <td><strong>408889</strong></td>
-              <td>Inside_Terminal</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>30Days</td>
-              <td>
-                <p class="status delivered">On-The-Job</p>
-              </td>
-              <td>Saudi</td>
-              <td class="text-xl font-sans font-semibold"> Joning Date : 03-Nov-2024</td>
-            </tr>
-            <tr>
-              <td>26</td>
-              <td>MD JUWEL ISLAM</td>
-              <td><strong>12-Jun-24 </strong></td>
-              <td><strong>02-Oct-2024</strong></td>
-              <td><strong>25-Nov-2024 </strong></td>
-              <td><strong>401772</strong></td>
-              <td>Inside The Terminal/Indoor Plant</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>54 Days</td>
-              <td>
-                <p class="status delivered">On_Vacation</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>27</td>
-              <td>KADIR KASHEM</td>
-              <td><strong>12-Jun-24 </strong></td>
-              <td><strong>02-Oct-2024</strong></td>
-              <td><strong>25-Nov-2024 </strong></td>
-              <td><strong>405526</strong></td>
-              <td>Royel_Terminal</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>54 Days</td>
-              <td>
-                <p class="status delivered">On_Vacation</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>28</td>
-              <td>LOTIF MIAH AKRAB</td>
-              <td><strong>12-Jun-24 </strong></td>
-              <td><strong>03-Oct-2024</strong></td>
-              <td><strong>26-Dec-2024 </strong></td>
-              <td><strong>401779</strong></td>
-              <td>Messhall</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>84 Days</td>
-              <td>
-                <p class="status delivered">On-Vacation</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>29</td>
-              <td>Khalid AlKhaldi</td>
-              <td><strong>24-Sep-24 </strong></td>
-              <td><strong>24-Sep-2024</strong></td>
-              <td><strong>28-Sep-2024 </strong></td>
-              <td><strong>408880</strong></td>
-              <td>Managment</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>04-Days</td>
-              <td>
-                <p class="status bg-success p-2">On-The -Job</p>
-              </td>
-              <td>Saudi</td>
-              <td class="text-gray-400 font-bold">
-                --Joing Date : 29-Sep-2024
-              </td>
-            </tr>
-            <tr>
-              <td>30</td>
-              <td>Yazan Abu Obayd<span class="new">New !</span></td>
-              <td><strong>26-Sep-24 </strong></td>
-              <td><strong>01-Jan-2025</strong></td>
-              <td><strong>31-Jan-2024 </strong></td>
-              <td><strong>401748</strong></td>
-              <td>Wast-Managment</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>30-Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Jordani</td>
-              <td>---</td>
-            </tr>
-            <tr>
-              <td>31</td>
-              <td>Ali AlMahasnah</td>
-              <td><strong>29-Sep-24 </strong></td>
-              <td><strong>15-Oct-2024</strong></td>
-              <td><strong>5-May-2024 </strong></td>
-              <td><strong>408174</strong></td>
-              <td>Wast-Managment</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>21-Days</td>
-              <td>
-                <p class="status delivered">On-Vacation</p>
-              </td>
-              <td>Saudi</td>
-              <td>---</td>
-            </tr>
+          <tr>
+            <td>12</td>
+            <td>
+              ZAKEER HUSSAIN FATEH MOHD
 
-            <tr>
-              <td>32</td>
-              <td>Saeed Ahmed Hkohar<span class="new">New !</span></td>
-              <td><strong>29-Sep-2024 </strong></td>
-              <td><strong>01-Feb-2025</strong></td>
-              <td><strong>02-May-2025 </strong></td>
-              <td><strong>401797</strong></td>
-              <td>Campe & Security</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>90 Days</td>
-              <td>
-                <p class="status cancelled">cancelled</p>
-              </td>
-              <td>Pakistani</td>
-              <td>
-                <h2 class="text-xl font-bold">Joing Data: 22-Mar-2023</h2>
-              </td>
-            </tr>
-            <tr>
-              <td>33</td>
-              <td>Asad Ullah<span class="new">New !</span></td>
-              <td><strong>30-Sep-2024 </strong></td>
-              <td><strong>01-Feb-2025</strong></td>
-              <td><strong>02-April-2025 </strong></td>
-              <td><strong>407700</strong></td>
-              <td>Roads Graound</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>60Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Pakistani</td>
-              <td>Peshawar IA Pakistani</td>
-            </tr>
-            <tr>
-              <td>34</td>
-              <td>Salim<span class="new">New !</span></td>
-              <td><strong>01-Oct-2024 </strong></td>
-              <td><strong>01-Feb-2025</strong></td>
-              <td><strong>02-May-2025 </strong></td>
-              <td><strong>407437</strong></td>
-              <td>Nursery</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>90Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>35</td>
-              <td>Raseel Miah<span class="new">New !</span></td>
-              <td><strong>01-Oct-2024 </strong></td>
-              <td><strong>01-Feb-2025</strong></td>
-              <td><strong>02-May-2025 </strong></td>
-              <td><strong>401783</strong></td>
-              <td>Control Tower</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>90Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>36</td>
-              <td>Alam Mia<span class="new">New !</span></td>
-              <td><strong>01-Oct-2024 </strong></td>
-              <td><strong>01-Feb-2025</strong></td>
-              <td><strong>02-May-2025 </strong></td>
-              <td><strong>403451</strong></td>
-              <td>Irrigation</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>90Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>37</td>
-              <td>Alex Garcia <span class="new">New !</span></td>
-              <td><strong>01-Oct-2024 </strong></td>
-              <td><strong>01-Feb-2025</strong></td>
-              <td><strong>08-Mar-2025 </strong></td>
-              <td><strong>401749</strong></td>
-              <td>Management</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>35Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Philippini</td>
-              <td>Ninoy Aquino Airprot -</td>
-            </tr>
+            </td>
+            <td><strong>08-July-24 </strong></td>
+            <td><strong>03-Nov-2024</strong></td>
+            <td><strong>26-Jan-2025 </strong></td>
+            <td><strong>405639</strong></td>
+            <td>Irrigation</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>84 Days</td>
+            <td>
+              <p class="status pending">On_Vacation</p>
+            </td>
+            <td>Indian</td>
+            <td>Dehli_Airprot</td>
+          </tr>
 
-            <!-- <tr>
+          <tr>
+            <td>13</td>
+            <td>MOHAMMAD JAMAL</td>
+            <td><strong>31-July-2024</strong></td>
+            <td><strong>05-Aug-2024</strong></td>
+            <td><strong>05-Sep-2024 </strong></td>
+            <td><strong>407470</strong></td>
+            <td>FENCE,ROAD,DRAIN</td>
+            <td>
+              <p class="status cancelled">Emergency</p>
+            </td>
+            <td>30 Days</td>
+            <td>
+              <p class="status bg-success p-2">On_The_Job</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td class="text-gray-500 text-xl font-mono">
+              Joining Date : 22-Sep-2024
+            </td>
+          </tr>
+
+          <tr>
+            <td>14</td>
+            <td>MD Fhozlul Hakue <span class="new">New !</span></td>
+            <td><strong>02-Sep-24 </strong></td>
+            <td><strong>01-Jan-2025</strong></td>
+            <td><strong>01-May-2025 </strong></td>
+            <td><strong>403449</strong></td>
+            <td>Waste Management</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>120Days</td>
+            <td>
+              <p class="status pending">Pending</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Mohammad Mithun <span class="new">New !</span></td>
+            <td><strong>02-Sep-24 </strong></td>
+            <td><strong>01-Jan-2025</strong></td>
+            <td><strong>01-Mar-2025 </strong></td>
+            <td><strong>408141</strong></td>
+            <td>PARKING GARAGE</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>60Days</td>
+            <td>
+              <p class="status pending">Pending</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>MOHAMMAD ROCKY HOSSAIN <span class="new">New !</span></td>
+            <td><strong>02-Sep-24 </strong></td>
+            <td><strong>01-Jan-2025</strong></td>
+            <td><strong>01-Mar-2025 </strong></td>
+            <td><strong>405702</strong></td>
+            <td>Nursery</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>60Days</td>
+            <td>
+              <p class="status pending">Pending</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Main Uddin<span class="new">New !</span></td>
+            <td><strong>02-Sep-24 </strong></td>
+            <td><strong>01-Jan-2025</strong></td>
+            <td><strong>01-Mar-2025 </strong></td>
+            <td><strong>407572</strong></td>
+            <td>PARKING GARAGE</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>60Days</td>
+            <td>
+              <p class="status pending">Pending</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>MOHAMMED MUSLIM <span class="new">New !</span></td>
+            <td><strong>04-Sep-24 </strong></td>
+            <td><strong>01-Jan-2025</strong></td>
+            <td><strong>01-Mar-2025 </strong></td>
+            <td><strong>401803</strong></td>
+            <td>Irrigation</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>60Days</td>
+            <td>
+              <p class="status pending">Pending</p>
+            </td>
+            <td>Indian</td>
+            <td>Dehlli_Internation_Airprot</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>MD DALOWAR<span class="new">New !</span></td>
+            <td><strong>02-Sep-24 </strong></td>
+            <td><strong>01-Jan-2025</strong></td>
+            <td><strong>01-Mar-2025 </strong></td>
+            <td><strong>407609</strong></td>
+            <td>Control Tower</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>60Days</td>
+            <td>
+              <p class="status pending">Pending</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Mohammad Abu Kaowsar<span class="new">New !</span></td>
+            <td><strong>09-Sep-24 </strong></td>
+            <td><strong>01-Jan-2025</strong></td>
+            <td><strong>01-Apr-2025 </strong></td>
+            <td><strong>408140</strong></td>
+            <td>Irrigation</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>90Days</td>
+            <td>
+              <p class="status pending">Pending</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>ALI ABDUL HADI</td>
+            <td><strong>08-Sep-24 </strong></td>
+            <td><strong>01-Oct-2024</strong></td>
+            <td><strong>30-Oct-2024 </strong></td>
+            <td><strong>401737</strong></td>
+            <td>Royal Terminal</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>30Days</td>
+            <td>
+              <p class="status bg-blue-400">On_The_Job</p>
+            </td>
+            <td>Saudi</td>
+            <td class="text-gray-500 text-xl font-mono"> 31-oct-2024</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>A.Jabbar <span class="new"> New !</span></td>
+            <td><strong>15-Dec-2024 </strong></td>
+            <td><strong>01-April0-2025</strong></td>
+            <td><strong>30-May-2024 </strong></td>
+            <td><strong>405395</strong></td>
+            <td>Roads & Graounds</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>60Days</td>
+            <td>
+              <p class="status pending">Pending</p>
+            </td>
+            <td>Indian</td>
+            <td>Dehli_Airprot</td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>Hassan Ahmed Alzaharani</td>
+            <td><strong>16-Sep-24 </strong></td>
+            <td><strong>17-Sep-2024</strong></td>
+            <td><strong>20-Sep-2024 </strong></td>
+            <td><strong>407344</strong></td>
+            <td>Managment</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>3Days</td>
+            <td>
+              <p class="status bg-success p-2">On_The_Job</p>
+            </td>
+            <td>Saudi</td>
+            <td class="text-gray-500 text-xl font-mono">
+              Joining Date : 21-Sep-2024
+            </td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>SADIK SAIDUR MAHADI</td>
+            <td><strong>22-Sep-24 </strong></td>
+            <td><strong>24-Sep-2024</strong></td>
+            <td><strong>26-Sep-2024 </strong></td>
+            <td><strong>401730</strong></td>
+            <td>Inside_Terminal</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>3Days</td>
+            <td>
+              <p class="status bg-success p-2">On_The_Job</p>
+            </td>
+            <td>Saudi</td>
+            <td class="text-gray-500 text-xl font-mono">
+              Joning 28-Sep-2024
+            </td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>Mozah Farss Al Dossary</td>
+            <td><strong>24-Sep-24 </strong></td>
+            <td><strong>15-Oct-2024</strong></td>
+            <td><strong>14-Nov-2024 </strong></td>
+            <td><strong>408889</strong></td>
+            <td>Inside_Terminal</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>30Days</td>
+            <td>
+              <p class="status delivered">On-The-Job</p>
+            </td>
+            <td>Saudi</td>
+            <td class="text-gray-500 text-xl font-mono"> Joning Date : 03-Nov-2024</td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>MD JUWEL ISLAM</td>
+            <td><strong>12-Jun-24 </strong></td>
+            <td><strong>02-Oct-2024</strong></td>
+            <td><strong>25-Nov-2024 </strong></td>
+            <td><strong>401772</strong></td>
+            <td>Inside The Terminal/Indoor Plant</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>54 Days</td>
+            <td>
+              <p class="status delivered">On_The_Job</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td class="text-gray-500 text-xl font-mono">26-Nov-2024</td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>KADIR KASHEM</td>
+            <td><strong>12-Jun-24 </strong></td>
+            <td><strong>02-Oct-2024</strong></td>
+            <td><strong>25-Nov-2024 </strong></td>
+            <td><strong>405526</strong></td>
+            <td>Royel_Terminal</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>54 Days</td>
+            <td>
+              <p class="status delivered">On_Vacation</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td class="text-gray-500 text-xl font-mono">26-Nov-2024</td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>LOTIF MIAH AKRAB</td>
+            <td><strong>12-Jun-24 </strong></td>
+            <td><strong>03-Oct-2024</strong></td>
+            <td><strong>26-Dec-2024 </strong></td>
+            <td><strong>401779</strong></td>
+            <td>Messhall</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>84 Days</td>
+            <td>
+              <p class="status delivered">On-Vacation</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>Khalid AlKhaldi</td>
+            <td><strong>24-Sep-24 </strong></td>
+            <td><strong>24-Sep-2024</strong></td>
+            <td><strong>28-Sep-2024 </strong></td>
+            <td><strong>408880</strong></td>
+            <td>Managment</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>04-Days</td>
+            <td>
+              <p class="status bg-success p-2">On-The -Job</p>
+            </td>
+            <td>Saudi</td>
+            <td class="text-gray-500 text-xl font-mono">
+              --Joing Date : 29-Sep-2024
+            </td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>Yazan Abu Obayd<span class="new">New !</span></td>
+            <td><strong>26-Sep-24 </strong></td>
+            <td><strong>01-Jan-2025</strong></td>
+            <td><strong>31-Jan-2024 </strong></td>
+            <td><strong>401748</strong></td>
+            <td>Wast-Managment</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>30-Days</td>
+            <td>
+              <p class="status pending">Pending</p>
+            </td>
+            <td>Jordani</td>
+            <td>---</td>
+          </tr>
+          <tr>
+            <td>31</td>
+            <td>Ali AlMahasnah</td>
+            <td><strong>29-Sep-24 </strong></td>
+            <td><strong>15-Oct-2024</strong></td>
+            <td><strong>5-May-2024 </strong></td>
+            <td><strong>408174</strong></td>
+            <td>Wast-Managment</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>21-Days</td>
+            <td>
+              <p class="status delivered">On-Vacation</p>
+            </td>
+            <td>Saudi</td>
+            <td class="text-gray-500 text-xl font-mono">14-Nov-2024</td>
+          </tr>
+
+          <tr>
+            <td>32</td>
+            <td>Saeed Ahmed Hkohar<span class="new">reday for  Emargency</span></td>
+            <td><strong>29-Sep-2024 </strong></td>
+            <td><strong>01-Feb-2025</strong></td>
+            <td><strong>02-May-2025 </strong></td>
+            <td><strong>401797</strong></td>
+            <td>Campe & Security</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>90 Days</td>
+            <td>
+              <p class="status cancelled">cancelled</p>
+            </td>
+            <td>Pakistani</td>
+            <td>
+              <h2 class="text-xl font-bold">Joing Data: 22-Mar-2023</h2>
+            </td>
+          </tr>
+          <tr>
+            <td>33</td>
+            <td>Asad Ullah<span class="new">New !</span></td>
+            <td><strong>30-Sep-2024 </strong></td>
+            <td><strong>01-Feb-2025</strong></td>
+            <td><strong>02-April-2025 </strong></td>
+            <td><strong>407700</strong></td>
+            <td>Roads Graound</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>60Days</td>
+            <td>
+              <p class="status pending">Pending</p>
+            </td>
+            <td>Pakistani</td>
+            <td>Peshawar IA Pakistani</td>
+          </tr>
+          <tr>
+            <td>34</td>
+            <td>Salim<span class="new">New !</span></td>
+            <td><strong>01-Oct-2024 </strong></td>
+            <td><strong>01-Feb-2025</strong></td>
+            <td><strong>02-May-2025 </strong></td>
+            <td><strong>407437</strong></td>
+            <td>Nursery</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>90Days</td>
+            <td>
+              <p class="status pending">Pending</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
+          <tr>
+            <td>35</td>
+            <td>Raseel Miah<span class="new">New !</span></td>
+            <td><strong>01-Oct-2024 </strong></td>
+            <td><strong>01-April-2025 </strong></td>
+            <td><strong>30-Jun-2025 </strong></td>
+            <td><strong>401783</strong></td>
+            <td>Control Tower</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>90Days</td>
+            <td>
+              <p class="status pending">pending</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
+          <tr>
+            <td>36</td>
+            <td>Alam Mia<span class="new">New !</span></td>
+            <td><strong>01-Oct-2024 </strong></td>
+            <td><strong>01-Feb-2025</strong></td>
+            <td><strong>02-May-2025 </strong></td>
+            <td><strong>403451</strong></td>
+            <td>Irrigation</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>90Days</td>
+            <td>
+              <p class="status pending">Pending</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
+          <tr>
+            <td>37</td>
+            <td>Alex Garcia <span class="new">New !</span></td>
+            <td><strong>01-Oct-2024 </strong></td>
+            <td><strong>01-Feb-2025</strong></td>
+            <td><strong>08-Mar-2025 </strong></td>
+            <td><strong>401749</strong></td>
+            <td>Management</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>35Days</td>
+            <td>
+              <p class="status pending">Pending</p>
+            </td>
+            <td>Philippini</td>
+            <td>Ninoy Aquino Airprot -</td>
+          </tr>
+
+          <!-- <tr>
               <td>38</td>
               <td>Turkiy</td>
               <td><strong>01-Oct-2024 </strong></td>
@@ -776,252 +798,312 @@
               <td>Saudi</td>
               <td class="text-gray-500 font-bold">Joining Data 16-Oct-2024</td>
             </tr> -->
-            <tr>
-              <td>39</td>
-              <td>Alamin Miha</td>
-              <td><strong>02-Oct-2024 </strong></td>
-              <td><strong>06-Oct-2024</strong></td>
-              <td><strong>20-Nov-2024 </strong></td>
-              <td><strong>405685</strong></td>
-              <td>Street Light</td>
-              <td>
-                <p class="status cancelled">Emargency</p>
-              </td>
-              <td>45Days</td>
-              <td>
-                <p class="status delivered">On-Work</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td class="text-xl font-bold">Joing Date : 19-Nov-2024</td>
-            </tr>
-            <tr>
-              <td>40</td>
-              <td>Sonam Pashang<span class="new">New !</span></td>
-              <td><strong>03-Oct-2024 </strong></td>
-              <td><strong>01-Feb-2025</strong></td>
-              <td><strong>02-April-2025 </strong></td>
-              <td><strong>401805</strong></td>
-              <td>Parkingarage</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>60Days</td>
-              <td>
-                <p class="status cancelled">pending</p>
-              </td>
-              <td>Nipali</td>
-              <td><h2 class="text-xl">Tribonb Airprot</h2></td>
-            </tr>
-            <tr>
-              <td>41</td>
-              <td>UDDHAB PRASAD GIRI <span class="new">New !</span></td>
-              <td><strong>06-Oct-2024 </strong></td>
-              <td><strong>01-Feb-2025</strong></td>
-              <td><strong>02-April-2025 </strong></td>
-              <td><strong>407529</strong></td>
-              <td>Wast-Managment</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>60Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Nipali</td>
-              <td>Tribonb Airprot</td>
-            </tr>
-            <tr>
-              <td>42</td>
-              <td>Bipad Mondal Madan</td>
-              <td><strong>12-Oct-2024 </strong></td>
-              <td><strong>01-Feb-2025</strong></td>
-              <td><strong>01-April-2025 </strong></td>
-              <td><strong>401800</strong></td>
-              <td>Parkingarage</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>0Days</td>
-              <!-- <td>60Days</td> -->
-              <td>
-                <p class="status cancelled">cancelled</p>
-              </td>
-              <td>Indian</td>
-              <td>29-April-2023/td></td>
-            </tr>
+          <tr>
+            <td>39</td>
+            <td>Alamin Miha</td>
+            <td><strong>02-Oct-2024 </strong></td>
+            <td><strong>06-Oct-2024</strong></td>
+            <td><strong>20-Nov-2024 </strong></td>
+            <td><strong>405685</strong></td>
+            <td>Street Light</td>
+            <td>
+              <p class="status cancelled">Emargency</p>
+            </td>
+            <td>45Days</td>
+            <td>
+              <p class="status delivered">On-Work</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td class="text-gray-500 text-xl font-mono">Joing Date : 19-Nov-2024</td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td>Sonam Pashang<span class="new">New !</span></td>
+            <td><strong>03-Oct-2024 </strong></td>
+            <td><strong>01-Feb-2025</strong></td>
+            <td><strong>02-April-2025 </strong></td>
+            <td><strong>401805</strong></td>
+            <td>Parkingarage</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>60Days</td>
+            <td>
+              <p class="status cancelled">pending</p>
+            </td>
+            <td>Nipali</td>
+            <td>
+              <h2 class="text-xl">Tribonb Airprot</h2>
+            </td>
+          </tr>
+          <tr>
+            <td>41</td>
+            <td>UDDHAB PRASAD GIRI <span class="new">New !</span></td>
+            <td><strong>06-Oct-2024 </strong></td>
+            <td><strong>01-Feb-2025</strong></td>
+            <td><strong>02-April-2025 </strong></td>
+            <td><strong>407529</strong></td>
+            <td>Wast-Managment</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>60Days</td>
+            <td>
+              <p class="status pending">Pending</p>
+            </td>
+            <td>Nipali</td>
+            <td>Tribonb Airprot</td>
+          </tr>
+          <tr>
+            <td>42</td>
+            <td>Bipad Mondal Madan</td>
+            <td><strong>12-Oct-2024 </strong></td>
+            <td><strong>01-Feb-2025</strong></td>
+            <td><strong>01-April-2025 </strong></td>
+            <td><strong>401800</strong></td>
+            <td>Parkingarage</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>0Days</td>
+            <!-- <td>60Days</td> -->
+            <td>
+              <p class="status cancelled">cancelled</p>
+            </td>
+            <td>Indian</td>
+            <td class="text-red-500 text-xl font-mono">29-April-2023/td></td>
+          </tr>
 
-            <tr>
-              <td>43</td>
-              <td>MOHD ZIYA UDDIN	<span class="text-teal-500 font-bold"> !!Recive ticket 01-Dec-24</span></td>
-              <td><strong>02-Aug-2024 </strong></td>
-              <td><strong>01-Dec-2024</strong></td>
-              <td><strong>01-Jan-2024 </strong></td>
-              <td><strong>401753</strong></td>
-              <td>Royel_Terminal</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>29Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>44</td>
-              <td>MOHAMMED REJAUL MIAH		<span class="text-teal-500 font-bold"> !!Recive ticket 01-Dec-24</span></td>
-              <td><strong>02-Aug-2024 </strong></td>
-              <td><strong>01-Dec-2024</strong></td>
-              <td><strong>27-Jan-2025 </strong></td>
-              <td><strong>405492</strong></td>
-              <td>Royel_Terminal</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>57Days</td>
-              <td>
-                <p class="status pending">Approved</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>45</td>
-              <td>MD BACHU MIAH	<span class="text-teal-500 font-bold"> !!Recive ticket 03-Dec-24</span></td>
-              <td><strong>02-Aug-2024 </strong></td>
-              <td><strong>03-Dec-2024</strong></td>
-              <td><strong>26-Feb-2024 </strong></td>
-              <td><strong>401754</strong></td>
-              <td>Royel_Terminal</td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>85Days</td>
-              <td>
-                <p class="status pending">Approved</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>46</td>
-              <td>Masdur Rhaman	<span class="text-teal-500 font-bold"> !!Recive ticket 01-Dec-24</span></td>
-              <td><strong>02-Aug-2024 </strong></td>
-              <td><strong>01-Dec-2024</strong></td>
-              <td><strong>27-Jan-2025 </strong></td>
-              <td><strong>407610</strong></td>
-              <td>PARKING GARAGE
-              </td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>57Days</td>
-              <td>
-                <p class="status pending">Approved</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>47</td>
-              <td>MD Saiful	<span class="text-teal-500 font-bold"> !!Recive ticket 01-Dec-24</span></td>
-              <td><strong>02-Aug-2024 </strong></td>
-              <td><strong>01-Dec-2024</strong></td>
-              <td><strong>27-Jan-2025 </strong></td>
-              <td><strong>407647</strong></td>
-              <td>GVIP
-              </td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>57Days</td>
-              <td>
-                <p class="status pending">Approved</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>48</td>
-              <td>Syed Mir Mohammad Ali	<span class="new"> New !</span></td>
-              <td><strong>22-Oct-2024 </strong></td>
-              <td><strong>01-Mar-2025</strong></td>
-              <td><strong>30-Apr-2025 </strong></td>
-              <td><strong>410094</strong></td>
-              <td>WORKSHOP-IP
-              </td>
-              <td>
-                <p class="status delivered">Normal</p>
-              </td>
-              <td>60Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Indian</td>
-              <td>Hdrabad i Airpot</td>
-            </tr>
-            <tr>
-              <td>49</td>
-              <td>MD RUBEL ALI	<span class="new">New !!</span></td>
-              <td><strong>27-OCt-2024 </strong></td>
-              <td><strong>04-Nov-2024</strong></td>
-              <td><strong>19-Dec-2024 </strong></td>
-              <td><strong>407447</strong></td>
-              <td>WORKSHOP-IP
-              </td>
-              <td>
-                <p class="status cancelled">Emargency</p>
-              </td>
-              <td>30Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
-            <tr>
-              <td>50</td>
-              <td>Md Musaraf Hossain	<span class="new">New !!</span></td>
-              <td><strong>30-OCt-2024 </strong></td>
-              <td><strong>10-Nov-2024</strong></td>
-              <td><strong>10-Dec-2024 </strong></td>
-              <td><strong>407444</strong></td>
-              <td>Royel_Terminal
-              </td>
-              <td>
-                <p class="status cancelled">Emargency</p>
-              </td>
-              <td>30Days</td>
-              <td>
-                <p class="status pending">Pending</p>
-              </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
-            </tr>
+          <tr>
+            <td>43</td>
+            <td>MOHD ZIYA UDDIN</td>
+            <td><strong>02-Aug-2024 </strong></td>
+            <td><strong>01-Dec-2024</strong></td>
+            <td><strong>01-Jan-2024 </strong></td>
+            <td><strong>401753</strong></td>
+            <td>Royel_Terminal</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>29Days</td>
+            <td>
+              <p class="status delivered">On_Vacation</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
+          <tr>
+            <td>44</td>
+            <td>MOHAMMED REJAUL MIAH</td>
+            <td><strong>02-Aug-2024 </strong></td>
+            <td><strong>01-Dec-2024</strong></td>
+            <td><strong>27-Jan-2025 </strong></td>
+            <td><strong>405492</strong></td>
+            <td>Royel_Terminal</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>57Days</td>
+            <td>
+              <p class="status delivered">On-vacation</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
+          <tr>
+            <td>45</td>
+            <td>MD BACHU MIAH </td>
+            <td><strong>02-Aug-2024 </strong></td>
+            <td><strong>03-Dec-2024</strong></td>
+            <td><strong>26-Feb-2024 </strong></td>
+            <td><strong>401754</strong></td>
+            <td>Royel_Terminal</td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>85Days</td>
+            <td>
+              <p class="status delivered">On-Vacation</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
+          <tr>
+            <td>46</td>
+            <td>Masdur Rhaman </td>
+            <td><strong>02-Aug-2024 </strong></td>
+            <td><strong>01-Dec-2024</strong></td>
+            <td><strong>27-Jan-2025 </strong></td>
+            <td><strong>407610</strong></td>
+            <td>PARKING GARAGE
+            </td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>57Days</td>
+            <td>
+              <p class="status delivered">On-Vacation</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
+          <tr>
+            <td>47</td>
+            <td>MD Saiful </td>
+            <td><strong>02-Aug-2024 </strong></td>
+            <td><strong>01-Dec-2024</strong></td>
+            <td><strong>27-Jan-2025 </strong></td>
+            <td><strong>407647</strong></td>
+            <td>GVIP
+            </td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>57Days</td>
+            <td>
+              <p class="status delivered">On-Vacation</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
+          <tr>
+            <td>48</td>
+            <td>Syed Mir Mohammad Ali <span class="new"> New !</span></td>
+            <td><strong>22-Oct-2024 </strong></td>
+            <td><strong>01-Mar-2025</strong></td>
+            <td><strong>30-Apr-2025 </strong></td>
+            <td><strong>410094</strong></td>
+            <td>WORKSHOP-IP
+            </td>
+            <td>
+              <p class="status delivered">Normal</p>
+            </td>
+            <td>60Days</td>
+            <td>
+              <p class="status pending">Pending</p>
+            </td>
+            <td>Indian</td>
+            <td>Hdrabad i Airpot</td>
+          </tr>
+          <tr>
+            <td>49</td>
+            <td>MD RUBEL ALI <span class="new">New !!</span></td>
+            <td><strong>27-OCt-2024 </strong></td>
+            <td><strong>04-Nov-2024</strong></td>
+            <td><strong>19-Dec-2024 </strong></td>
+            <td><strong>407447</strong></td>
+            <td>WORKSHOP-IP
+            </td>
+            <td>
+              <p class="status cancelled">Emargency</p>
+            </td>
+            <td>30Days</td>
+            <td>
+              <p class="status pending">Pending</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td>HSIA_Dhaka</td>
+          </tr>
+        
 
-            <tr>
-              <td>51</td>
-              <td>Md Musaraf Hossain	<span class="new">New !!</span></td>
-              <td><strong>30-OCt-2024 </strong></td>
-              <td><strong>10-Nov-2024</strong></td>
-              <td><strong>10-Dec-2024 </strong></td>
-              <td><strong>407444</strong></td>
-              <td>Royel_Terminal
+          <tr>
+            <td>50</td>
+            <td>Md Musaraf Hossain</td>
+            <td><strong>30-OCt-2024 </strong></td>
+            <td><strong>10-Nov-2024</strong></td>
+            <td><strong>10-Dec-2024 </strong></td>
+            <td><strong>407444</strong></td>
+            <td>Royel_Terminal
+            </td>
+            <td>
+              <p class="status cancelled">Emargency</p>
+            </td>
+            <td>30Days</td>
+            <td>
+              <p class="status pending">On the Job</p>
+            </td>
+            <td>Bangladeshi</td>
+            <td class="text-xl text-gray-500 font-mono">14-Dec-2024</td>
+          </tr>
+          <tr>
+            <td>51</td>
+            <td>Khan Mohammad</td>
+            <td><strong>30-OCt-2024 </strong></td>
+            <td><strong>10-Nov-2024</strong></td>
+            <td><strong>10-Dec-2024 </strong></td>
+            <td><strong>407812</strong></td>
+            <td>Parkingarage
+            </td>
+            <td>
+              <p class="status cancelled">Emargency</p>
+            </td>
+            <td>30Days</td>
+            <td>
+              <p class="status pending">On-The-Job</p>
+            </td>
+            <td>Pakistani</td>
+            <td class="text-xl text-gray-500 font-mono">15-Dec-2024</td>
+          </tr>
+          <tr>
+            <td>52</td>
+            <td>sala uddin</td>
+            <td><strong>30-OCt-2024 </strong></td>
+            <td><strong>10-Nov-2024</strong></td>
+            <td><strong>10-Dec-2024 </strong></td>
+            <td><strong>407812</strong></td>
+            <td>Parkingarage
+            </td>
+            <td>
+              <p class="status cancelled">Emargency</p>
+            </td>
+            <td>30Days</td>
+            <td>
+              <p class="status pending">On-Vacation</p>
+            </td>
+            <td>Pakistani</td>
+            <td>lahore-IA</td>
+          </tr>
+          <tr>
+            <td>53</td>
+            <td>WASEEM CHHIMPA <span class="new">New !</span></td>
+            <td><strong>15-Dec-2024</strong></td>
+            <td><strong>1-April-2025</strong></td>
+            <td><strong>30-Jun-2025</strong></td>
+            <td><strong>401791</strong></td>
+            <td>MANAGMENT
+            </td>
+            <td>
+              <p class="status pending">Normal</p>
+            </td>
+            <td>30Days</td>
+            <td>
+              <p class="status pending">pending</p>
+            </td>
+            <td>KFIA-DAMMAM</td>
+            <td>DEHILLE-IA</td>
+          </tr>
+          <!-- <tr>
+              <td>54</td>
+              <td></td>
+              <td><strong>02-Dec-2024 </strong></td>
+              <td><strong>08-Dec-2024</strong></td>
+              <td><strong>07-Jan-2025</strong></td>
+              <td><strong>405665</strong></td>
+              <td>Nursery
               </td>
               <td>
                 <p class="status cancelled">Emargency</p>
               </td>
               <td>30Days</td>
               <td>
-                <p class="status pending">Pending</p>
+                <p class="status pending">On-Vacation</p>
               </td>
-              <td>Bangladeshi</td>
-              <td>HSIA_Dhaka</td>
+              <td>Pakistani</td>
+              <td>lahore-IA</td>
             </tr>
             <tr>
-              <td>52</td>
-              <td>Khan Mohammad	<span class="new">New !!</span></td>
+              <td>53</td>
+              <td>sala uddin <span class="text-xl text-red-500 font-thin"> New !!</span></td>
               <td><strong>30-OCt-2024 </strong></td>
               <td><strong>10-Nov-2024</strong></td>
               <td><strong>10-Dec-2024 </strong></td>
@@ -1033,16 +1115,17 @@
               </td>
               <td>30Days</td>
               <td>
-                <p class="status pending">Pending</p>
+                <p class="status pending">On-Vacation</p>
               </td>
               <td>Pakistani</td>
               <td>lahore-IA</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
+            </tr> -->
+        </tbody>
+      </table>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
